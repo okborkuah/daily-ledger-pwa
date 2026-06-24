@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+  <!-- PWA / Android -->
+  <meta name="theme-color" content="#1B2B5E" />
+  <link rel="manifest" href="/manifest.json" />
+
+  <!-- PWA / iOS -->
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-title" content="Daily Ledger" />
+  <link rel="apple-touch-icon" href="/icon-192.png" />
+
+  <title>Daily Ledger</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { background: #F0F4FA; -webkit-tap-highlight-color: transparent; }
+    input[type="date"]::-webkit-calendar-picker-indicator { filter: invert(1); }
+  </style>
+</head>
+<body>
+  <div id="root"></div>
+  <script type="module" src="/src/main.jsx"></script>
+</body>
+</html>
